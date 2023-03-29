@@ -23,12 +23,29 @@ body {
   gap: 50px;
 }
 
-a {
-  font-size: 80px;
+.link {
+  font-size: 60px;
   color: orangered;
   text-decoration: none;
 }
 
-a:hover {
+.link:hover {
   text-decoration: underline;
+}
+
+.fb-link,
+.mail-link,
+.tel-link {
+  text-decoration: none;
+  color: black;
+}
+
+.fb-link:hover,
+.mail-link:hover,
+.tel-link:hover {
+  text-decoration: underline;
+}
+
+span {
+  color: orangered;
 }
