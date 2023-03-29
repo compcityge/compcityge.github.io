@@ -1,11 +1,45 @@
+/* Import fornt start */
+
+@font-face {
+  font-family: "BPG LE Studio 02 Caps";
+  src: url("../fonts/bpg-le-studio-02-caps-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bpg-le-studio-02-caps-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bpg-le-studio-02-caps-webfont.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/bpg-le-studio-02-caps-webfont.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../fonts/bpg-le-studio-02-caps-webfont.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/bpg-le-studio-02-caps-webfont.svg#bpg_le_studio_02_capsregular")
+      format("svg"); /* Legacy iOS */
+}
+
+/* Import font end */
+
+/* Variables start */
+
+:root {
+  --mainColor: #f56a09;
+  --black: rgb(67, 67, 67);
+}
+
+/* Variables end */
+
+/* CSS reset start */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* CSS reset end */
+
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  font-family: "BPG LE Studio 02 Caps", sans-serif;
 }
 
 body {
@@ -22,7 +56,7 @@ body {
 
 .link {
   font-size: 60px;
-  color: orangered;
+  color: var(--mainColor);
   text-decoration: none;
   text-align: center;
 }
@@ -35,11 +69,15 @@ body {
 .mail-link,
 .tel-link {
   text-decoration: none;
-  color: black;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: bold;
 }
 
 h2 {
   text-align: center;
+  color: var(--black);
+  font-size: 20px;
 }
 
 .fb-link:hover,
@@ -49,7 +87,7 @@ h2 {
 }
 
 span {
-  color: orangered;
+  color: var(--mainColor);
 }
 
 @media screen and (max-width: 500px) {
